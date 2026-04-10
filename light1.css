@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dark{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+}
+.dark .container{
+    width:100vh;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap:2em;
+}
+.dark .container i{
+    color:white;
+    font-size:70px;
+}
+.dark .container button{
+    border-radius:6px;
+    font-size:20px;
+    padding:7px;
+    transition: all ease-in 0.3ms;
+}
+.dark .container button:active{
+    scale:0.7;
+}
+.light{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+.light .container{
+    width:100vh;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap:2em;
+}
+.light .container i{
+    color:black;
+    font-size:70px;
+    animation: bounce linear 0.9s;
+}
+.light .container button{
+    border-radius:6px;
+    font-size:20px;
+    padding:7px;
+    background-color:black;
+    color: white;
+}
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(-150px);
+    }
+}
